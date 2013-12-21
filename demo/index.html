@@ -10,6 +10,7 @@
 	<base href=".."></base>
 	<link rel="stylesheet" href="demo/demo.css">
 	<script type="text/javascript" src="lib/angular.js"></script>
+	<script type="text/javascript" src="lib/angular-resource.js"></script>
 	<script type="text/javascript" src="src/angular-database.js"></script>
 	<script type="text/javascript" src="demo/app.js"></script>
 </head>
@@ -18,7 +19,7 @@
 	<article>
 		<section>
 			<div class="container">
-				<table ajax-database-table></table>
+				<table ajax-database-table ng-model="data"></table>
 			</div>
 		</section>
 	</article>
