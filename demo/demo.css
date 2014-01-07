@@ -8,7 +8,7 @@ table.angular-database-table {
 }
 
 table.angular-database-table thead tr th {
-	background: #E0E0CC;
+	background: #CCCCCC;
 	font-weight: bold;
 	padding: 1px 5px 1px 5px;
 	text-align: center;
@@ -22,4 +22,8 @@ table.angular-database-table tbody tr:nth-child(even) {
 table.angular-database-table tbody tr:nth-child(odd) {
 	background: #EEEEEE;
 	padding: 1px 5px 1px 5px;
+}
+
+.angular-database-table-pagination select {
+	padding: 1px 6px;
 }

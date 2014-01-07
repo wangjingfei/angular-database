@@ -8,9 +8,17 @@ module.directive("ajaxDatabaseTable", ["ajaxDatabaseConfig", function(ajaxDataba
 	return {
 		restrict: "E",
 		require: "?ngModel",
-		template: "<table class=\"angular-database-table\"><thead><th ng-repeat=\"(header, null) in headers\">{{header}}</th></thead>" + 
+		template: "<span style=\"float:left\" class=\"angular-database-table-control\"><button ng-click=\"\">New</button></span>" + 
+					"<span style=\"float:right\" class=\"angular-database-table-pagination\">" +
+					"<span>Order by </span>" + "<select><options><option value=\"name\">Name</option><option value=\"updateTime\">Time</option></options></select>" + 
+					"<span>, page size </span>" +
+					"<select><options><option value=\"10\">10</option><option value=\"20\">20</option><option value=\"50\">50</option></options></select>" + 
+					"<button>Prev</button>" + "<input type=\"text\" maxlength=\"4\" size=\"4\">" + "<button>Next</button>" + "<button>Go</button>" +
+					"</span>" +
+
+					"<table class=\"angular-database-table\"><thead><th ng-repeat=\"(header, null) in headers\">{{header}}</th><th>Operations</th></thead>" + 
 					"<tbody><tr ng-repeat=\"item in items\"><td ng-repeat=\"(header, null) in headers\">" +
-					"{{item[header]}}</td></tr></tbody></table>",
+					"{{item[header]}}</td><td><button>Edit</button><button>Delete</button></td></tr></tbody></table>",
 		scope: {
 			ngModel: "="
 		},
