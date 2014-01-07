@@ -6,9 +6,9 @@ module.value("ajaxDatabaseConfig", {
 
 module.directive("ajaxDatabaseTable", ["ajaxDatabaseConfig", function(ajaxDatabaseConfig) {
 	return {
-		restrict: "A",
+		restrict: "E",
 		require: "?ngModel",
-		template: "<table><thead><th ng-repeat=\"(header, null) in headers\">{{header}}</th></thead>" + 
+		template: "<table class=\"angular-database-table\"><thead><th ng-repeat=\"(header, null) in headers\">{{header}}</th></thead>" + 
 					"<tbody><tr ng-repeat=\"item in items\"><td ng-repeat=\"(header, null) in headers\">" +
 					"{{item[header]}}</td></tr></tbody></table>",
 		scope: {

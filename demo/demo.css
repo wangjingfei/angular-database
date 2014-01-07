@@ -1,0 +1,25 @@
+table.angular-database-table {
+	border-spacing: 2px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	width: 100%;
+}
+
+table.angular-database-table thead tr th {
+	background: #E0E0CC;
+	font-weight: bold;
+	padding: 1px 5px 1px 5px;
+	text-align: center;
+}
+
+table.angular-database-table tbody tr:nth-child(even) {
+	background: #DDDDDD;
+	padding: 1px 5px 1px 5px;
+}
+
+table.angular-database-table tbody tr:nth-child(odd) {
+	background: #EEEEEE;
+	padding: 1px 5px 1px 5px;
+}
