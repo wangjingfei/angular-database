@@ -8,8 +8,8 @@ module.directive("ajaxDatabaseTable", ["ajaxDatabaseConfig", function(ajaxDataba
 	return {
 		restrict: "E",
 		require: "?ngModel",
-		template: "<span style=\"float:left\" class=\"angular-database-table-control\"><button ng-click=\"\">New</button></span>" + 
-					"<span style=\"float:right\" class=\"angular-database-table-pagination\">" +
+		template: "<span class=\"angular-database-table-control\"><button ng-click=\"\">New</button></span>" + 
+					"<span class=\"angular-database-table-pagination\">" +
 					"<span>Order by </span>" + "<select><options><option value=\"name\">Name</option><option value=\"updateTime\">Time</option></options></select>" + 
 					"<span>, page size </span>" +
 					"<select><options><option value=\"10\">10</option><option value=\"20\">20</option><option value=\"50\">50</option></options></select>" + 

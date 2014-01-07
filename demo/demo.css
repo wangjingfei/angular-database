@@ -27,3 +27,11 @@ table.angular-database-table tbody tr:nth-child(odd) {
 .angular-database-table-pagination select {
 	padding: 1px 6px;
 }
+
+.angular-database-table-control {
+	float: left;
+}
+
+.angular-database-table-pagination {
+	float: right;
+}
